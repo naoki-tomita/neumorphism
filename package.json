@@ -1,0 +1,35 @@
+{
+  "name": "neumorphism",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "typed-css-modules": "^0.6.4",
+    "css-loader": "^3.6.0",
+    "style-loader": "^1.2.1",
+    "@babel/core": "^7.10.3",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-info": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/cli": "^5.3.19",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.19",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "ts-loader": "^7.0.5"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prebuild": "rm -rf dist/",
+    "build": "tsc -p tsconfig.build.json"
+  }
+}
