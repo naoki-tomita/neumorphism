@@ -31,7 +31,7 @@ export const DropdownMenu: FC<{ show?: boolean }> = ({ show, children }) => {
 
 export const DropdownItem: FC<{ onClick?: () => void }> = ({ onClick, children }) => {
   return (
-    <a className="dropdown-item" href="#" onClick={onClick}>{children}</a>
+    <button className="dropdown-item" onClick={onClick}>{children}</button>
   );
 }
 

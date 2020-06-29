@@ -28,6 +28,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
+    "prebuild-storybook": "rm -rf storybook-static/",
     "build-storybook": "build-storybook",
     "prebuild": "rm -rf dist/",
     "build": "tsc -p tsconfig.build.json"

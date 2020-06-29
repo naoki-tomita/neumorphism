@@ -1,6 +1,7 @@
 
-function injectStyle() {
+export function injectStyle() {
   const cssText = `
+  @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
   @import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap);
   :root{
     --blue:#0056B3;
@@ -2133,10 +2134,6 @@ function injectStyle() {
     color:#44476a;
     text-decoration:none
   }
-  .btn.focus,.btn:focus{
-    outline:0;
-    box-shadow:inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff
-  }
   .btn.disabled,.btn:disabled{
     opacity:.65;
     box-shadow:none
@@ -2161,9 +2158,6 @@ function injectStyle() {
     background-color:#cfd1df;
     border-color:#c8cad9
   }
-  .btn-primary.focus,.btn-primary:focus{
-    box-shadow:inset 0 1px 0 rgba(236,240,243,.15),0 1px 1px rgba(38,40,51,.075),0 0 0 .0625rem rgba(203,204,214,.5)
-  }
   .btn-primary.disabled,.btn-primary:disabled{
     color:#31344b;
     background-color:#e6e7ee;
@@ -2187,9 +2181,6 @@ function injectStyle() {
     color:#ecf0f3;
     background-color:#2640a9;
     border-color:#243c9e
-  }
-  .btn-secondary.focus,.btn-secondary:focus{
-    box-shadow:inset 0 1px 0 rgba(236,240,243,.15),0 1px 1px rgba(38,40,51,.075),0 0 0 .0625rem rgba(74,101,206,.5)
   }
   .btn-secondary.disabled,.btn-secondary:disabled{
     color:#ecf0f3;
@@ -3874,11 +3865,6 @@ function injectStyle() {
     white-space:nowrap;
     background-color:transparent;
     border:0
-  }
-  .dropdown-item:focus,.dropdown-item:hover{
-    color:#3a3d5a;
-    text-decoration:none;
-    background-color:#31344b
   }
   .dropdown-item.active,.dropdown-item:active{
     color:#ecf0f3;
@@ -18846,9 +18832,6 @@ function injectStyle() {
     background-color:#e6e7ee;
     border-color:#e6e7ee
   }
-  .btn-primary.focus,.btn-primary:focus{
-    box-shadow:inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff
-  }
   .btn-primary:not(:disabled):not(.disabled).active,.btn-primary:not(:disabled):not(.disabled):active,.show>.btn-primary.dropdown-toggle{
     color:#31344b;
     background-color:#e6e7ee;
@@ -18871,9 +18854,6 @@ function injectStyle() {
     color:#ecf0f3;
     background-color:#2d4cc8;
     border-color:#2d4cc8
-  }
-  .btn-secondary.focus,.btn-secondary:focus{
-    box-shadow:inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff
   }
   .btn-secondary:not(:disabled):not(.disabled).active,.btn-secondary:not(:disabled):not(.disabled):active,.show>.btn-secondary.dropdown-toggle{
     color:#ecf0f3;
