@@ -1,3 +1,4 @@
+import { action } from "@storybook/addon-actions";
 import React from 'react';
 import { Button } from "../src/Button";
 
@@ -5,10 +6,10 @@ export const Colors = () => {
   return (
     <>
     <div style={{ margin: 12 }}>
-      <Button color="primary">default / primary</Button>
+      <Button color="primary" onClick={action("button-click-primary")}>default / primary</Button>
     </div>
     <div style={{ margin: 12 }}>
-      <Button color="secondary">secondery</Button>
+      <Button color="secondary" onClick={action("button-click-secondery")}>secondery</Button>
     </div>
     </>
   );

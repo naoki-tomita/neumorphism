@@ -8,7 +8,7 @@ export const Badge: FC<{
 }> = ({ uppercase, color = "dark", text }) => {
   return <span className={classnames({
     badge: true,
-    ...{ [`badge-${color}`]: true },
+    [`badge-${color}`]: true,
     "text-uppercase": !!uppercase,
   })}>{text}</span>;
 }

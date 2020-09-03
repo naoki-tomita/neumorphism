@@ -6,6 +6,7 @@ export interface Props {
   color?: "primary" | "secondary";
   textColor?: "info" | "dark" | "secondary" | "primary" | "success" | "danger" | "gray";
   pill?: boolean;
+  onClick?: () => void;
 }
 
 export const Button: FC<Props> = (props) => {
@@ -13,9 +14,9 @@ export const Button: FC<Props> = (props) => {
     btn: true,
     ...(props.color ? { [`btn-${props.color}`]: true } : {}),
     ...(props.textColor ? { [`text-${props.textColor}`]: true } : {}),
-    "btn-pill": !!props.pill
+    "btn-pill": !!props.pill,
   });
   return (
-    <button className={className}>{props.children}</button>
+    <button className={className} onClick={props.onClick}>{props.children}</button>
   );
 }
